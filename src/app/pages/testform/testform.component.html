@@ -1,0 +1,38 @@
+<div>
+    <h3>Enter User Details</h3>
+</div>
+<div>
+    <form >
+        <!--
+            <mat-form-field>
+            <mat-label>First Name :</mat-label>
+            <input type="text" matInput placeholder="John" required name="fname" id="fname" value="fname" [(ngModel)]="fname"/>
+        </mat-form-field>
+        -->
+        <hr/>
+        <div>
+            <div>
+                <input matInput type="text" placeholder="John" name="fname" [(ngModel)]="fname" required>
+            </div>
+            <div>
+                <input type="text" placeholder="Doe" name="lname" [(ngModel)]="lname" required/>
+            </div>
+            <div>
+                <input type="number" placeholder="24" name="age" [(ngModel)]="age" required/>
+            </div>
+            <div>
+                <input type="email" placeholder="example@gmail.com" name="email" [(ngModel)]="email" required/>
+            </div>
+            <br/>
+            
+            <div>
+                <button mat-raised-button color="primary" (click)="onSubmit(fname, lname, age, email)">Submit</button>
+            </div>
+
+        </div>
+        
+    </form>
+
+</div>
+
+
